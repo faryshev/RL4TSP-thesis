@@ -1,0 +1,96 @@
+{
+  "seed": 46,
+  "output_root": "results\\20260623_221409\\small",
+  "experiment_name": "tsp_diagnostics",
+  "scale": 10.0,
+  "hidden_dim": 32,
+  "exact_max_n": 8,
+  "reference_solver": "exact_or_nn_2opt",
+  "lkh_scale": 1000000,
+  "run_permutation": true,
+  "run_noise": true,
+  "run_entropy": true,
+  "progress": true,
+  "permutation_n_cities": 6,
+  "permutation_instances": 3,
+  "permutations_per_instance": 2,
+  "noise_n_cities": 6,
+  "noise_instances": 3,
+  "noise_sigmas": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "entropy_sizes": [
+    5,
+    6
+  ],
+  "entropy_instances": 3,
+  "entropy_stochastic_samples": 3,
+  "model_checkpoints": [
+    {
+      "method": "Attention:batch_greedy_mean",
+      "model": "attention",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\attention_batch_greedy_mean.pt"
+    },
+    {
+      "method": "Attention:greedy_rollout",
+      "model": "attention",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\attention_greedy_rollout.pt"
+    },
+    {
+      "method": "PointerNet:batch_greedy_mean",
+      "model": "pointer",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\pointer_batch_greedy_mean.pt"
+    },
+    {
+      "method": "PointerNet:greedy_rollout",
+      "model": "pointer",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\pointer_greedy_rollout.pt"
+    },
+    {
+      "method": "POMO",
+      "model": "attention",
+      "decoder": "pomo",
+      "checkpoint": "results\\20260623_221409\\small\\models\\attention_pomo.pt",
+      "pomo_num_starts": null
+    }
+  ],
+  "entropy_model_checkpoints": [
+    {
+      "method": "Attention:batch_greedy_mean",
+      "model": "attention",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\attention_batch_greedy_mean.pt"
+    },
+    {
+      "method": "Attention:greedy_rollout",
+      "model": "attention",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\attention_greedy_rollout.pt"
+    },
+    {
+      "method": "PointerNet:batch_greedy_mean",
+      "model": "pointer",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\pointer_batch_greedy_mean.pt"
+    },
+    {
+      "method": "PointerNet:greedy_rollout",
+      "model": "pointer",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\pointer_greedy_rollout.pt"
+    },
+    {
+      "method": "POMO",
+      "model": "attention",
+      "decoder": "pomo",
+      "checkpoint": "results\\20260623_221409\\small\\models\\attention_pomo.pt",
+      "pomo_num_starts": null
+    }
+  ]
+}

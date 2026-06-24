@@ -1,0 +1,21 @@
+{
+  "model": "attention",
+  "training": "pomo",
+  "best_epoch": 2340,
+  "best_metric_name": "pomo_sample_best_length",
+  "best_metric": 36.0426025390625,
+  "config": {
+    "seed": 43,
+    "output_root": "results\\20260623_233724\\full",
+    "scale": 10.0,
+    "device": "cpu",
+    "n_train": 20,
+    "batch_size": 8,
+    "epochs": 3000,
+    "learning_rate": 0.0001,
+    "hidden_dim": 128,
+    "num_starts": 20,
+    "eval_interval": 50,
+    "progress": true
+  }
+}
