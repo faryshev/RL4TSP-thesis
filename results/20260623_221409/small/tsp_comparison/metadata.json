@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-06-23T22:14:31",
+  "methods": [
+    "Attention:batch_greedy_mean",
+    "Attention:greedy_rollout",
+    "POMO",
+    "PointerNet:batch_greedy_mean",
+    "PointerNet:greedy_rollout",
+    "Reference:exact_dp"
+  ],
+  "model_checkpoints": [
+    {
+      "method": "Attention:batch_greedy_mean",
+      "model": "attention",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\attention_batch_greedy_mean.pt"
+    },
+    {
+      "method": "Attention:greedy_rollout",
+      "model": "attention",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\attention_greedy_rollout.pt"
+    },
+    {
+      "method": "PointerNet:batch_greedy_mean",
+      "model": "pointer",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\pointer_batch_greedy_mean.pt"
+    },
+    {
+      "method": "PointerNet:greedy_rollout",
+      "model": "pointer",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_221409\\small\\models\\pointer_greedy_rollout.pt"
+    }
+  ],
+  "pomo_checkpoint": "results\\20260623_221409\\small\\models\\attention_pomo.pt"
+}

@@ -1,0 +1,14 @@
+{
+  "seed": 43,
+  "output_root": "results/full",
+  "scale": 10.0,
+  "device": "cpu",
+  "n_train": 20,
+  "batch_size": 8,
+  "epochs": 3000,
+  "learning_rate": 0.0001,
+  "hidden_dim": 128,
+  "num_starts": 20,
+  "eval_interval": 50,
+  "progress": true
+}

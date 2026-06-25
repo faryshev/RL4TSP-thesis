@@ -1,0 +1,48 @@
+{
+  "seed": 44,
+  "output_root": "results\\20260623_233724\\full",
+  "experiment_name": "tsp_comparison",
+  "scale": 10.0,
+  "sizes": [
+    10,
+    20,
+    50,
+    100,
+    200,
+    300
+  ],
+  "instances_per_size": 300,
+  "exact_max_n": 10,
+  "reference_solver": "exact_or_lkh",
+  "lkh_scale": 1000000,
+  "hidden_dim": 128,
+  "model_checkpoints": [
+    {
+      "method": "Attention:batch_greedy_mean",
+      "model": "attention",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_233724\\full\\models\\attention_batch_greedy_mean.pt"
+    },
+    {
+      "method": "Attention:greedy_rollout",
+      "model": "attention",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_233724\\full\\models\\attention_greedy_rollout.pt"
+    },
+    {
+      "method": "PointerNet:batch_greedy_mean",
+      "model": "pointer",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_233724\\full\\models\\pointer_batch_greedy_mean.pt"
+    },
+    {
+      "method": "PointerNet:greedy_rollout",
+      "model": "pointer",
+      "decoder": "greedy",
+      "checkpoint": "results\\20260623_233724\\full\\models\\pointer_greedy_rollout.pt"
+    }
+  ],
+  "pomo_checkpoint": "results\\20260623_233724\\full\\models\\attention_pomo.pt",
+  "pomo_num_starts": null,
+  "progress": true
+}

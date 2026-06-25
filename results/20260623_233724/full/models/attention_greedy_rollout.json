@@ -1,0 +1,28 @@
+{
+  "model": "attention",
+  "training": "reinforce",
+  "baseline": "greedy_rollout",
+  "best_epoch": 2431,
+  "best_metric_name": "greedy_mean_length",
+  "best_metric": 38.93690490722656,
+  "config": {
+    "seed": 42,
+    "output_root": "results\\20260623_233724\\full",
+    "scale": 10.0,
+    "device": "cpu",
+    "n_train": 20,
+    "batch_size": 64,
+    "epochs": 3000,
+    "learning_rate": 0.0001,
+    "hidden_dim": 128,
+    "models": [
+      "attention",
+      "pointer"
+    ],
+    "baselines": [
+      "batch_greedy_mean",
+      "greedy_rollout"
+    ],
+    "progress": true
+  }
+}
