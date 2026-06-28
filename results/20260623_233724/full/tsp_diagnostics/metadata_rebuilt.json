@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-06-27T20:11:35",
+  "written": {
+    "permutation_summary": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260623_233724\\full\\tsp_diagnostics\\permutation_invariance_summary.csv",
+    "permutation_plot": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260623_233724\\full\\figures\\permutation_invariance.png",
+    "noise_summary": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260623_233724\\full\\tsp_diagnostics\\noise_robustness_summary.csv",
+    "noise_json": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260623_233724\\full\\tsp_diagnostics\\noise_robustness.json",
+    "noise_plot": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260623_233724\\full\\figures\\noise_robustness.png",
+    "entropy_summary": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260623_233724\\full\\tsp_diagnostics\\entropy_experiment_summary.csv",
+    "entropy_json": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260623_233724\\full\\tsp_diagnostics\\entropy_experiment.json",
+    "entropy_plot": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260623_233724\\full\\figures\\entropy_gap.png",
+    "entropy_correlations_plot": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260623_233724\\full\\figures\\entropy_correlations.png",
+    "entropy_spearman_correlations_plot": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260623_233724\\full\\figures\\entropy_spearman_correlations.png"
+  },
+  "source": "recomputed from existing raw CSV files"
+}

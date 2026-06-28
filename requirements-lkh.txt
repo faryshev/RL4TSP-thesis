@@ -1,0 +1,5 @@
+-r requirements.txt
+
+# Optional: required only for full-size TSP comparisons that use
+# reference_solver="lkh" or reference_solver="exact_or_lkh".
+elkai>=2.0

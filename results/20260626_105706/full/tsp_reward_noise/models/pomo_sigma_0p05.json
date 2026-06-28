@@ -1,0 +1,52 @@
+{
+  "model": "attention",
+  "method": "POMO",
+  "training": "reward_noise",
+  "sigma_rel": 0.05,
+  "best_epoch": 2518,
+  "best_metric_name": "pomo_true_best_mean_length",
+  "best_metric": 37.74353790283203,
+  "config": {
+    "seed": 42,
+    "output_root": "results\\20260626_105706\\full",
+    "experiment_name": "tsp_reward_noise",
+    "scale": 10.0,
+    "device": "cpu",
+    "model": "attention",
+    "models": [
+      "attention",
+      "pointer",
+      "pomo"
+    ],
+    "n_train": 64,
+    "train_size": 20,
+    "eval_sizes": [
+      10,
+      20,
+      50,
+      100,
+      200
+    ],
+    "eval_instances": 100,
+    "sigma_rel_values": [
+      0.0,
+      0.01,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "epochs": 3000,
+    "batch_size": 64,
+    "hidden_dim": 128,
+    "baseline": "greedy_rollout",
+    "baselines": [
+      "greedy_rollout"
+    ],
+    "pomo_num_starts": null,
+    "learning_rate": 0.0001,
+    "exact_max_n": 10,
+    "reference_solver": "exact_or_lkh",
+    "lkh_scale": 1000000,
+    "progress": true
+  }
+}

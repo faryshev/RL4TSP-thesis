@@ -1,0 +1,62 @@
+{
+  "created_at": "2026-06-26T10:56:18",
+  "experiment": "tsp_training_reward_noise",
+  "methods": [
+    "Attention:greedy_rollout",
+    "POMO",
+    "PointerNet:greedy_rollout"
+  ],
+  "sigma_rel_values": [
+    0.0,
+    0.1
+  ],
+  "evaluation_objective": "true_tour_length",
+  "training_objective": "observed_noisy_tour_length",
+  "evaluation_reference_set": "precomputed once per run and reused for every method/sigma variant",
+  "checkpoints": [
+    {
+      "method": "Attention:greedy_rollout",
+      "sigma_rel": 0.0,
+      "checkpoint": "results\\20260626_105540\\small\\tsp_reward_noise\\models\\attention_greedy_rollout_sigma_0.pt"
+    },
+    {
+      "method": "Attention:greedy_rollout",
+      "sigma_rel": 0.1,
+      "checkpoint": "results\\20260626_105540\\small\\tsp_reward_noise\\models\\attention_greedy_rollout_sigma_0p1.pt"
+    },
+    {
+      "method": "PointerNet:greedy_rollout",
+      "sigma_rel": 0.0,
+      "checkpoint": "results\\20260626_105540\\small\\tsp_reward_noise\\models\\pointer_greedy_rollout_sigma_0.pt"
+    },
+    {
+      "method": "PointerNet:greedy_rollout",
+      "sigma_rel": 0.1,
+      "checkpoint": "results\\20260626_105540\\small\\tsp_reward_noise\\models\\pointer_greedy_rollout_sigma_0p1.pt"
+    },
+    {
+      "method": "POMO",
+      "sigma_rel": 0.0,
+      "checkpoint": "results\\20260626_105540\\small\\tsp_reward_noise\\models\\pomo_sigma_0.pt"
+    },
+    {
+      "method": "POMO",
+      "sigma_rel": 0.1,
+      "checkpoint": "results\\20260626_105540\\small\\tsp_reward_noise\\models\\pomo_sigma_0p1.pt"
+    }
+  ],
+  "figures": {
+    "reward_noise_gap.png": "results\\20260626_105540\\small\\figures\\reward_noise_gap.png",
+    "reward_noise_training.png": "results\\20260626_105540\\small\\figures\\reward_noise_training.png"
+  },
+  "plot_sources": {
+    "reward_noise_gap.png": {
+      "summary_csv": "results\\20260626_105540\\small\\tsp_reward_noise\\summary.csv"
+    },
+    "reward_noise_training.png": {
+      "raw_csv": "results\\20260626_105540\\small\\tsp_reward_noise\\raw.csv",
+      "summary_csv": "results\\20260626_105540\\small\\tsp_reward_noise\\summary.csv"
+    }
+  },
+  "intervals": "95% confidence intervals for aggregated plots when repeated observations are available"
+}

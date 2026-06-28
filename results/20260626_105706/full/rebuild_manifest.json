@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-06-27T23:11:25",
+  "run_dir": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260626_105706\\full",
+  "written": {
+    "reward_noise_summary": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260626_105706\\full\\tsp_reward_noise\\summary.csv",
+    "reward_noise_gap.png": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260626_105706\\full\\figures\\reward_noise_gap.png",
+    "reward_noise_training.png": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260626_105706\\full\\figures\\reward_noise_training.png",
+    "reward_noise_rebuild_metadata": "C:\\Users\\Daniil\\Desktop\\code 10\\results\\20260626_105706\\full\\tsp_reward_noise\\metadata_rebuilt.json"
+  }
+}
